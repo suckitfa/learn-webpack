@@ -3,5 +3,8 @@ module.exports = {
     output: {
         filename:'bundle.js'
     },
-    mode: 'development'
+    mode: 'development',
+    devServer: {
+        publicPath:'/dist'
+    }
 }
