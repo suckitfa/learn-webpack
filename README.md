@@ -31,3 +31,17 @@ module: {
         ]
     },
 ```
+
+#### exclude和include
+- “include代表该规则只对正则匹配到的模块生效。”
+- “由于exclude优先级更
+```js
+“rules: [
+    {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+        exclude: /node_modules/,
+        include: /node_modules\/awesome-ui/,
+    }
+],”
+```
