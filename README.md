@@ -19,3 +19,15 @@
 - 多入口
 
 #### 不是很理解webpack和webpack-dev-server中的publicPath有啥区别
+
+#### 各种loader能够帮助webpack（只能理解javascript代码）处理各种资源。“style-loader加到了css-loader前面，这是因为在Webpack打包时是按照数组从后往前的顺序将资源交给loader处理的，因此要把最后生效的放在前面。”
+```js
+module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: ['style-loader','css-loader']
+            }
+        ]
+    },
+```
