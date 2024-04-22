@@ -45,3 +45,12 @@ module: {
     }
 ],”
 ```
+#### 常见的loader
+- babel-loader
+```js
+npm i babel-loader @babel/core @babel/preset-env
+//  babel-loader 链接babel与webpack
+// @babel/core babel编译器的核心模块
+// @babel/preset-env “它是Babel官方推荐的预置器，可根据用户设置的目标环境自动添加所需的插件和补丁来编译ES6+代码。”
+```
+- “babel-loader支持从.babelrc文件读取Babel配置，因此可以将presets和plugins从Webpack配置文件中提取出来，也能达到相同的效果。”
